@@ -1,0 +1,255 @@
+version: "3.1"
+
+nlu:
+- intent: greet
+  examples: |
+    - hey
+    - hello
+    - hi
+    - hello there
+    - good morning
+    - good evening
+    - moin
+    - hey there
+    - let's go
+    - hey dude
+    - goodmorning
+    - goodevening
+    - good afternoon
+
+- intent: goodbye
+  examples: |
+    - cu
+    - good by
+    - cee you later
+    - good night
+    - bye
+    - goodbye
+    - have a nice day
+    - see you around
+    - bye bye
+    - see you later
+
+- intent: affirm
+  examples: |
+    - yes
+    - y
+    - indeed
+    - of course
+    - that sounds good
+    - correct
+
+- intent: deny
+  examples: |
+    - no
+    - n
+    - never
+    - I don't think so
+    - don't like that
+    - no way
+    - not really
+
+- intent: mood_great
+  examples: |
+    - perfect
+    - great
+    - amazing
+    - feeling like a king
+    - wonderful
+    - I am feeling very good
+    - I am great
+    - I am amazing
+    - I am going to save the world
+    - super stoked
+    - extremely good
+    - so so perfect
+    - so good
+    - so perfect 
+
+- intent: mood_unhappy
+  examples: |
+    - my day was horrible
+    - I am sad
+    - I don't feel very well
+    - I am disappointed
+    - super sad
+    - I'm so sad
+    - sad
+    - very sad
+    - unhappy
+    - not good
+    - not very good
+    - extremly sad
+    - so saad
+    - so sad
+
+- intent: bot_challenge
+  examples: |
+    - are you a bot?
+    - are you a human?
+    - am I talking to a bot?
+    - am I talking to a human?
+
+- intent: context_setter
+  examples: |
+    - What time is the show Hamilton tonight?
+    - What are the show timings for Kimberly Akimbo?
+    - When is the next performance of The Phantom of the Opera?
+    - What time is Hamilton showing this evening?
+    - What are the show timings for Dear Evan Hansen this weekend?
+    - When can I catch a performance of Les Misérables this week?
+    - What time does Wicked start on Friday evening?
+    - Is there a Hamilton show tonight?
+    - When is the next showing of The Lion King at the New York?
+    - What are the timings for The Book of Mormon on Sunday?
+    - What time is Bad Cinderella showing in [New York](place)?
+    - When is the Almost Famous show in [Paris](place)?
+    - What time is The Lion King showing tomorrow?
+    - When does the Phantom of the Opera start tonight?
+    - What are the show timings for Chicago this weekend?
+    - When is the next performance of Dear Evan Hansen at the Music Box Theatre?
+    - What time is The Book of Mormon playing on Saturday afternoon?
+    - What is the runtime of Hamilton?
+    - Can you give me a description of Kimberly Akimbo?
+    - When does The Phantom of the Opera end its run?
+    - What is the ticket price for Hamilton?
+    - Where can I buy tickets for Dear Evan Hansen?
+    - What is the start date of Les Misérables?
+    - When is the last performance of Wicked in [New York](place)?
+    - Is there a website to buy tickets for The Lion King?
+    - Can you tell me more about the story of The Book of Mormon?
+    - What is the end date of Bad Cinderella?
+    - When does the Almost Famous show start in Paris?
+    - What musicals can I see in [Tokyo](place)?
+    - Is there any Broadway show currently going on in Moscow?
+    - What's the plot of The Masks of Oscar Wilde?
+    - What's playing at Mountainside Theatre?
+    - What is The Masks of Oscar Wilde about?
+    - What is the end date of Girls in the Boat?
+    - Can you give me an overview of the plot for this show?
+    - How long does the performance last, roughly?
+    - What is the central message or lesson of the show?
+    - Can you provide me with information on ticket prices for the show?
+    - Where can I find more information on the plot of the show?
+    - What's the phone number to book tickets for Metropolis?
+    - Can you give me a link to the box office or ticket sales page for the performance?
+    - where can I find tickets for the broadway show
+    - What is the average duration of the performance?
+    - Do you have any insights on the cost of tickets for the show in the West End?
+    - Where can I find more information on the plot of the show?
+    - What is the phone number to book tickets?
+    - what is the estimated runtime of the show
+    - What is the price range for tickets to the show
+    - Can you provide me with more details about the show and where I can learn more
+
+
+- intent: facts
+  examples: |
+    - What awards has Rosie O'Donnell won?
+    - What awards has Rosie O'Donnell been nominated for?
+    - How many Broadway shows has Mandy Gonzalez been in?
+    - How many West End shows has Mandy Gonzalez been in?
+    - How many Broadway shows has Alis-Elaine Anderson been in?
+    - What awards has Danielle Ferland been nominated for?
+    - How many Broadway shows has Kirsten Aimee been in?
+    - What awards has Mary Bacon won?
+
+- intent: suggetions
+  examples: |
+    - can you suggest me any broadway
+    - do you any suggetions for me about broadway?
+    - hey can you suggest me any broadway show that I might like?
+    - is there any upcoming broadway shows that I must watch?
+
+- intent: name
+  examples: |
+    - I want to tell you my name David{"entity": "username", "value" : "David"}
+    - My name is Sandy{"entity": "username", "value" : "Sandy"}
+    - hello myself Jack{"entity": "username", "value" : "Jack"}
+    - Hi, I'm Lisa{"entity": "username", "value": "Lisa"}
+    - This is John{"entity": "username", "value": "John"}
+    - Nice to meet you, I'm Sarah{"entity": "username", "value": "Sarah"}
+    - Hey, call me Mike{"entity": "username", "value": "Mike"}
+    - You can call me Emily{"entity": "username", "value": "Emily"}
+    - My name's Tom{"entity": "username", "value": "Tom"}
+
+- intent: location
+  examples: |
+    - I'm looking for timings in [London](place)
+    - in [New York](place) 
+    - I'm looking in [West End](place)
+    - in [Paris](place)
+
+- intent: equity_jobs
+  examples: |
+    - Is there any Equity vacancy?
+    - How can I find out about Equity job opportunities in Broadway?
+    - What Equity jobs are currently available in Broadway?
+    - Can you tell me about any open Equity roles in Broadway productions?
+    - I'm interested in working in an Equity job on Broadway, what opportunities are available?
+    - Where can I find information about Equity job postings in Broadway?
+    - What are the requirements for working in an Equity job on Broadway?
+    - Are there any open acting roles in Broadway?
+    - How can I audition for an acting role on Broadway?
+    - What are the requirements for becoming an Equity actor on Broadway?
+    - Can you tell me about any current Equity acting job opportunities in Broadway?
+    - What Broadway productions are currently casting for Equity actors?
+    - Is there any open Equity production manager job in Broadway?
+    - How can I find out about Equity production manager job opportunities in Broadway?
+    - What are the requirements for becoming an Equity production manager on Broadway?
+    - Can you tell me about any current Equity production manager job openings in Broadway?
+    - What Broadway productions are currently seeking Equity production managers?
+    - Are there any open Equity musical director roles in Broadway?
+    - How can I apply for an Equity musical director job on Broadway?
+    - What are the requirements for becoming an Equity musical director on Broadway?
+    - Can you tell me about any current Equity musical director job opportunities in Broadway?
+    - What Broadway productions are currently casting for Equity musical directors?
+
+
+- intent: non_equity_jobs
+  examples: |
+    - Are there any open non-union stage manager jobs in Broadway?
+    - How can I find out about non-Equity job opportunities in Broadway?
+    - Can you tell me about any current non-Equity stage manager job openings in Broadway?
+    - What are the requirements for becoming a non-union stage manager on Broadway?
+    - What Broadway productions are currently hiring non-Equity stage managers?
+    - Are there any open non-union wardrobe jobs in Broadway?
+    - How can I find out about non-Equity wardrobe job opportunities in Broadway?
+    - Can you tell me about any current non-Equity wardrobe job openings in Broadway?
+    - What are the requirements for becoming a non-union wardrobe assistant on Broadway?
+    - What Broadway productions are currently hiring non-Equity wardrobe staff?
+    - Are there any open non-union lighting designer jobs in Broadway?
+    - How can I find out about non-union job opportunities for lighting designers in Broadway?
+    - Can you tell me about any current non-Equity lighting designer job openings in Broadway?
+    - What are the requirements for becoming a non-union lighting designer on Broadway?
+    - What Broadway productions are currently seeking non-Equity lighting designers?
+
+- intent: industry_jobs
+  examples: |
+    - How can I find industry job opportunities in Broadway?
+    - What industry jobs are available in Broadway?
+    - Can you tell me about any current industry job openings in Broadway?
+    - What are the requirements for industry jobs in Broadway?
+    - What companies in Broadway offer industry jobs?
+    - Are there any open marketing jobs in Broadway?
+    - How can I apply for a marketing job in Broadway?
+    - Can you tell me about any current marketing job openings in Broadway?
+    - What are the requirements for becoming a marketer in the Broadway industry?
+    - What Broadway productions are currently hiring for marketing positions?
+    - Are there any open finance jobs in Broadway?
+    - How can I apply for a finance job in Broadway?
+    - Can you tell me about any current finance job openings in Broadway?
+    - What are the requirements for becoming a financial professional in the Broadway industry?
+    - What companies in Broadway are currently hiring for finance positions?
+
+- intent: add_job
+  examples: |
+    - How can I add a job listing to the site?
+    - What is the process for adding a job to the site?
+    - Can you tell me how to post a job on the site?
+    - What are the requirements for adding a job listing to the site?
+    - Who can I contact to add a job posting to the site?
+    - What are the requirements for applying to a job listing on the site?
+    - How can I apply to a job listing on the site?
+    - I want to add a job listing on this site?
+    - 

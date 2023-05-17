@@ -1,0 +1,11 @@
+RewriteEngine on
+RewriteRule ^http://%{HTTP_HOST}%{REQUEST_URI} [END,NE]
+# DO NOT REMOVE. CLOUDLINUX PASSENGER CONFIGURATION BEGIN
+PassengerAppRoot "/home/abriella/conversationapi"
+PassengerBaseURI "/rasabotchat"
+PassengerPython "/home/abriella/virtualenv/conversationapi/3.10/bin/python"
+# DO NOT REMOVE. CLOUDLINUX PASSENGER CONFIGURATION END
+# DO NOT REMOVE OR MODIFY. CLOUDLINUX ENV VARS CONFIGURATION BEGIN
+<IfModule Litespeed>
+</IfModule>
+# DO NOT REMOVE OR MODIFY. CLOUDLINUX ENV VARS CONFIGURATION END
