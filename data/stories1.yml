@@ -1,0 +1,38 @@
+
+version: "3.1"
+stories:
+- story: interactive_story_1
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: find_timing
+    entities:
+    - broadway_name: The Lion King
+  - slot_was_set:
+    - broadway_name: The Lion King
+  - intent: about_show
+    entities:
+    - broadway_name: The Lion King
+  - action: action_about_show
+  - action: action_movie
+  - intent: find_timing
+    entities:
+    - broadway_name: The
+    - broadway_name: Music Man Jr
+  - slot_was_set:
+    - broadway_name: Music Man Jr
+  - intent: about_show
+    entities:
+    - broadway_name: The
+    - broadway_name: Music Man Jr
+  - action: action_about_show
+  - action: action_movie
+  - slot_was_set:
+    - place: Palmer
+  - slot_was_set:
+    - cityCode: ('US')
+  - intent: about_show
+  - action: action_about_show
+  - action: action_movie
+  - slot_was_set:
+    - broadway_name: The Lion King
